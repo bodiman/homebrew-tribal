@@ -11,7 +11,7 @@ class Tribal < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Darwin_x86_64.tar.gz"
-      sha256 "901e6e22e051db370763f729e519e33b56b28f79c6b0e7746680bbbf4733e9a4"
+      sha256 "894bdce878218a55f997b20b9da61d200df7e20da1eb854cd72e559e858441b3"
 
       def install
         bin.install "tribal"
@@ -19,7 +19,7 @@ class Tribal < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Darwin_arm64.tar.gz"
-      sha256 "e4f0baf651ae2c582e252791d4036998ac47bb238e4820d8624eef696aee41ef"
+      sha256 "8e87380526a207bd62bc5cba47d36cd9adbbac115141ccdf7a6072368ff62bb0"
 
       def install
         bin.install "tribal"
@@ -30,14 +30,14 @@ class Tribal < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Linux_x86_64.tar.gz"
-      sha256 "92a2c9da39b4d3a7b682d41e89e6af55a2eec32d9018c0ffa42192da8e04ff3f"
+      sha256 "41c00b067c8bfa8f79e55ffe00ef99e138d1688fb86fff57aa099be297a5557f"
       def install
         bin.install "tribal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Linux_arm64.tar.gz"
-      sha256 "40fa29645fd9e86d781ac7c1db065a18c6830bfe53126674d01be36702f6f43a"
+      sha256 "287ae752c1f121ef6c4ad49cdaaaf345cdbc5fea9506b31ee37a4e4e89780866"
       def install
         bin.install "tribal"
       end
