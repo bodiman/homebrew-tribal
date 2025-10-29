@@ -5,21 +5,21 @@
 class Tribal < Formula
   desc "Tribal CLI - Graph-based development workflow"
   homepage "https://github.com/bodiman/tribal-cli"
-  version "1.0.3"
+  version "1.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Darwin_x86_64.tar.gz"
-      sha256 "894bdce878218a55f997b20b9da61d200df7e20da1eb854cd72e559e858441b3"
+      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.8/tribal-cli_Darwin_x86_64.tar.gz"
+      sha256 "6d4b894042a335403b83f3d87cfa849d8386bd12f755a8af9dd920bee9925e0e"
 
       def install
         bin.install "tribal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Darwin_arm64.tar.gz"
-      sha256 "8e87380526a207bd62bc5cba47d36cd9adbbac115141ccdf7a6072368ff62bb0"
+      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.8/tribal-cli_Darwin_arm64.tar.gz"
+      sha256 "3764c8c19f8972e4c35c6041e886eba901e5b7c9c338ed6e0202202172bade15"
 
       def install
         bin.install "tribal"
@@ -29,15 +29,15 @@ class Tribal < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Linux_x86_64.tar.gz"
-      sha256 "41c00b067c8bfa8f79e55ffe00ef99e138d1688fb86fff57aa099be297a5557f"
+      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.8/tribal-cli_Linux_x86_64.tar.gz"
+      sha256 "3a3b3e84b305f4c6991ac467c31b7230cb1a0599e621f9dac279c294e3f81baf"
       def install
         bin.install "tribal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.3/tribal-cli_Linux_arm64.tar.gz"
-      sha256 "287ae752c1f121ef6c4ad49cdaaaf345cdbc5fea9506b31ee37a4e4e89780866"
+      url "https://github.com/bodiman/tribal-cli/releases/download/v1.0.8/tribal-cli_Linux_arm64.tar.gz"
+      sha256 "b02907d2bbc9c13bf6ee03dfca125280aeb0d9d09d5a43e82b0cdee5d9ea7f48"
       def install
         bin.install "tribal"
       end
